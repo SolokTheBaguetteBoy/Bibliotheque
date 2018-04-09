@@ -1,0 +1,91 @@
+<web-app>
+	
+
+    <servlet>
+        <servlet-name>ServiceConnexion</servlet-name> 
+        <servlet-class>services.ServiceConnexion</servlet-class> 
+		
+		<init-param>
+			<param-name>ConnexionDB</param-name>
+			<param-value>MediathequeData</param-value>
+		</init-param>
+		
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServiceConnexion</servlet-name> 
+        <url-pattern>/index</url-pattern> 
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>Abonne</servlet-name> 
+        <servlet-class>services.ServiceAbonne</servlet-class> 
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Abonne</servlet-name> 
+        <url-pattern>/AbonneSelect</url-pattern> 
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>AbonneEmprunt</servlet-name> 
+        <servlet-class>services.ServiceEmprunt</servlet-class> 
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AbonneEmprunt</servlet-name> 
+        <url-pattern>/AbonneEmprunt</url-pattern> 
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>AbonneRetour</servlet-name> 
+        <servlet-class>services.ServiceRetour</servlet-class> 
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AbonneRetour</servlet-name> 
+        <url-pattern>/AbonneRetour</url-pattern> 
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>AbonneEmpruntDone</servlet-name> 
+        <servlet-class>services.ServiceEmpruntDone</servlet-class> 
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AbonneEmpruntDone</servlet-name> 
+        <url-pattern>/AbonneEmpruntDone</url-pattern> 
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>AbonneRetourDone</servlet-name> 
+        <servlet-class>services.ServiceRetourDone</servlet-class> 
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AbonneRetourDone</servlet-name> 
+        <url-pattern>/AbonneRetourDone</url-pattern> 
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>Bibliothecaire</servlet-name> 
+        <servlet-class>services.ServiceAjout</servlet-class> 
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Bibliothecaire</servlet-name> 
+        <url-pattern>/Bibliothecaire</url-pattern> 
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>BibliothecaireDone</servlet-name> 
+        <servlet-class>services.ServiceAjoutDone</servlet-class> 
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>BibliothecaireDone</servlet-name> 
+        <url-pattern>/BibliothecaireDone</url-pattern> 
+    </servlet-mapping>
+	
+	
+</web-app>
